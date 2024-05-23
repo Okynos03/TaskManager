@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="login_title">Log In</string>
+    <string name="logout_title">Log Out</string>
+    <string name="register_title">Register</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+
+    <string name="userName">User Name</string>
+    <string name="email">E-Mail</string>
+    <string name="register_password">Password</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="firts_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+
+    <array name="arrGenders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Retro Escabadora CAT 20391</item>
+    </array>
+
+</resources>

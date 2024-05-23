@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        style="@style/main_title"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="10dp">
+
+
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/userName" />
+            <EditText
+                android:id="@+id/userNames"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your User Name"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your E-mail"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_password" />
+            <EditText
+                android:id="@+id/registerPassword"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_confirm" />
+            <EditText
+                android:id="@+id/confirmPassword"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm your Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firts_name" />
+            <EditText
+                android:id="@+id/firtsName"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your Firts Name"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name" />
+            <EditText
+                android:id="@+id/lastName"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your Last Name"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone" />
+            <EditText
+                android:id="@+id/phone"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your Phone"
+                android:inputType="phone" />
+
+            <TextView
+                style="@style/subMin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender" />
+            <Spinner
+                android:id="@+id/redGender"
+                android:layout_marginTop="3dp"
+                style="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/primaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Send" />
+
+            <TextView
+                android:id="@+id/lblRegister"
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="don't you have an account? Register Her" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
